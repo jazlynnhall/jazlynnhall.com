@@ -1,21 +1,10 @@
 ---
-# An instance of the About widget.
-# Documentation: https://wowchemy.com/docs/page-builder/
 widget: about
-
-# Activate this widget? true/false
-active: true
-
-# This file represents a page section.
+widget_id: TEST
 headless: true
-
-# Order that this section appears on the page.
 weight: 20
-
-title: Biography
-
-# Choose the user profile to display
-# This should be the username (folder name) of a profile in your `content/authors/` folder.
-# See https://wowchemy.com/docs/get-started/#introduce-yourself
+title: About me
+active: true
 author: admin
 ---
+I'm a recent PhD and current postdoctoral research associate in the Forest Futures Lab at the Cary Institute of Ecosystem Studies. My PhD work drew from principles in ecology, hydrology, and geography to identify the effects of forest disturbance from extreme events on carbon sequestration and streamflow. For postdoctoral work, I am interested in evaluating forest response to and recovery from disturbance, carbon sequestration dynamics, carbon markets, and the relationships between forests and ecosystem services.
