@@ -34,7 +34,7 @@ education:
       year: 2018
     - course: BS in Geography, BA in Anthropology
       institution: University of Wyoming
-      year: 2011
+      year: 2016
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
