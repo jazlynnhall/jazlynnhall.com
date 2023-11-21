@@ -61,7 +61,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Fractional change in non-photosynthetic vegetation (ΔNPV) in forested areas of Puerto Rico caused by Hurricanes Irma and María in September 2017. Blue colours indicate absence of damage, including re-greening, while tan to dark red colours indicate damage. A value of 0–0.05 (i.e. light blue) indicates little or no change from the year before the storms (September 15 – November 1, 2016) to after the storms (September 21-November 1, 2017). Black circles indicate locations of field plots measured for this study. The additional inset panel shows the locations of the plots clustered within the boundaries of El Yunque National Forest. Clustered plots include subsections of the Luquillo Forest Dynamics Plot, all subsections of a forest succession plot, all elevation gradient plots, and two climate gradient plots (Supplementary Table S1). Non-forested areas and forested areas not included in the study area due to cloud cover for the study period are shown in grey. ΔNPV was generated from Sentinel-2 TOA imagery28 in Google Earth Engine74 and visualized using ESRI ArcGIS software (version 10.5 https://desktop.arcgis.com/en/arcmap/).'
   focal_point: ''
   preview_only: false
 
