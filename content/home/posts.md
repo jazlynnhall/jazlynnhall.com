@@ -16,7 +16,7 @@
   # Filter on criteria
   # filters:
    # folders:
-      - post
+ #     - post
    # tag: ''
    # category: ''
    # publication_type: ''
@@ -31,7 +31,7 @@
   # Page order: descending (desc) or ascending (asc) date.
   # order: desc
 
-design:
+# design:
   # Choose a view for the listings:
   view: compact
   columns: '2'
