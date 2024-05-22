@@ -6,9 +6,11 @@ website:
   navbar:
     left:
       - file: about.qmd
-        text: "About""
+        text: "About"
       - file: projects.qmd
-        text: "Projects""
+        text: "Projects"
+      - file: CV_JazlynnHall_240522.pdf
+        text: "CV"
 format:
   html:
     theme: cosmo
