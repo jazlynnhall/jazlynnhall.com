@@ -1,14 +1,18 @@
 ---
 title: "Jazlynn Hall"
-
-about: 
+subtitle: "Forest Ecologist"
+about:
   template: broadside
+  image: profile.jpg
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/jazlynnhall
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=a4CqqVcAAAAJ&hl=en&oi=ao
 ---
 
-This is a Quarto website.
+I'm a forest, landscape, and disturbance ecologist and am currently a Postdoctoral Associate in the Forest Futures Lab at the Cary Institute of Ecosystem Studies. In my work, I evaluate the spatial and temporal relationships between vegetation, climate, and disturbances such as fire, drought, cyclonic storms, and deforestation.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+Most recently, I'm interested in forest response to and recovery from fire and the post-fire impacts on forest ecosystem services like carbon storage and water resources.

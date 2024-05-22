@@ -2,7 +2,20 @@
 title: "About"
 ---
 
-About this site
+I graduated from the University of Wyoming with degrees in Geography and Anthropology. I received my Ph.D. from Columbia University in ecology and environmental biology, working with Dr. Maria Uriarte. Currently, I am a Postdoctoral Associate at the Cary Institute of Ecosystem Studies working with Dr. Winslow D. Hansen.
+
+
+PhD Research
+
+My Ph.D. research drew from principles in ecology, hydrology, and geography to identify the effects of forest disturbance from extreme events on carbon sequestration and streamflow in Puerto Rico. 
+
+In Puerto Rico, streamflow provides over 80% of water used for human consumption, and limited water storage infrastructure has caused multiple water rationing periods during drought. To understand the relationships between forest cover, drought, and streamflow, my coauthors and I used hydrological and statistical techniques ([Hall et al, 2022](https://onlinelibrary.wiley.com/doi/abs/10.1002/hyp.14551)). We found that watersheds with high forest cover had consistently greater streamflow than deforested ones, even during periods of intense and prolonged drought. Our results demonstrated that forest cover, through increased water storage and infiltration, may lessen the impact of drought on streamflow in Puerto Rico.
+
+Hurricane María hit Puerto Rico in 2017, causing widespread forest damage. To estimate forest damage extent (e.g., AGB loss), my coauthors and I combined field data and Sentinel-2 optical satellite imagery ([Hall et al. 2020](https://www.nature.com/articles/s41598-020-61164-2)) and determined that 23% of pre-hurricane forest AGB was lost. We evaluated risk factors associated with damage severity caused by Hurricane María using random forest decision trees and found that storm-related rainfall was a strong predictor of forest damage. Expected increases in hurricane-associated rainfall highlight the need to consider how such shifts, together with high-speed winds, will affect terrestrial ecosystems.
+
+Finally, we tested whether forest cover and estimates of forest damage explain changes to Puerto Rican streamflow regimes after Hurricane María. Using statistical models, we found that nearly all watersheds experienced higher post-storm streamflow. Forest damage increased streamflow after the storm, and forests, however damaged, increase resistance to storm impacts on streamflow. On average, major changes to streamflow regimes lasted months, but residual changes remained for over a year. Our results demonstrate how interactions between forest damage and cover influence streamflow regimes and increase understanding of forest damage effects on watershed function.
+
+
 
 ```{r}
 1 + 1
