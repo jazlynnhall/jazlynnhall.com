@@ -8,8 +8,11 @@ I graduated from the University of Wyoming in 2011 with degrees in Geography and
 
 I just wrapped up a project funded by the Environmental Defense Fund focusing on analyzing the distribution, trends, and drivers of forest carbon in the Western US (***Hall et al. in press at Earth's Future***). My collaborators and I used USDA Forest Inventory and Analysis (FIA) survey data (2005-2019) compare carbon between 19 forested ecoregions. Using GIS and statistical analysis, we analyzed patterns in the spatial distribution of forest carbon and identified social and biophysical carbon drivers, including tree harvest, fire occurrence and severity, insect and disease presence, topography, and climate indices. We evaluated driver importance as well as driver relationships with carbon using machine learning models and a model interpretation technique rooted in game theory. Finally, we assessed ecoregion-level recent carbon trends using linear models.
 
+*Relative driver importance for live and dead forest carbon pools*
+
 ![Relative Driver Importance](Hall2024_Figure2_map_grouped_importance_12km_livedead.jpg)
-![Recent Carbon Trends](Hall2024_Figure5_CTrends_livedead.jpg)
+
+*Recent trends in forest carbon (2005-2019)* ![Recent Carbon Trends](Hall2024_Figure5_CTrends_livedead.jpg)
 
 ## PhD Research
 
