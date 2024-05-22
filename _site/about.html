@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -131,7 +97,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#phd-research" id="toc-phd-research" class="nav-link active" data-scroll-target="#phd-research">PhD Research</a>
+  <ul class="collapse">
+  <li><a href="#streamflow-forest-cover-and-drought-in-puerto-rico" id="toc-streamflow-forest-cover-and-drought-in-puerto-rico" class="nav-link" data-scroll-target="#streamflow-forest-cover-and-drought-in-puerto-rico">Streamflow, forest cover, and drought in Puerto Rico</a></li>
+  <li><a href="#quantifying-forest-damage-from-hurricane-maria" id="toc-quantifying-forest-damage-from-hurricane-maria" class="nav-link" data-scroll-target="#quantifying-forest-damage-from-hurricane-maria">Quantifying forest damage from Hurricane Maria</a></li>
+  <li><a href="#relating-forest-damage-to-post-hurricane-streamflow-response" id="toc-relating-forest-damage-to-post-hurricane-streamflow-response" class="nav-link" data-scroll-target="#relating-forest-damage-to-post-hurricane-streamflow-response">Relating forest damage to post-hurricane streamflow response</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -153,20 +130,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>I graduated from the University of Wyoming with degrees in Geography and Anthropology. I received my Ph.D.&nbsp;from Columbia University in ecology and environmental biology, working with Dr.&nbsp;Maria Uriarte. Currently, I am a Postdoctoral Associate at the Cary Institute of Ecosystem Studies working with Dr.&nbsp;Winslow D. Hansen.</p>
-<p>PhD Research</p>
-<p>My Ph.D.&nbsp;research drew from principles in ecology, hydrology, and geography to identify the effects of forest disturbance from extreme events on carbon sequestration and streamflow in Puerto Rico.</p>
+<p>I graduated from the University of Wyoming in 2011 with degrees in Geography and Anthropology. In 2022, I received my Ph.D.&nbsp;from Columbia University in ecology and environmental biology, working with Dr.&nbsp;Maria Uriarte. Currently, I am a Postdoctoral Associate at the Cary Institute of Ecosystem Studies working with Dr.&nbsp;Winslow D. Hansen.</p>
+<section id="phd-research" class="level2">
+<h2 class="anchored" data-anchor-id="phd-research">PhD Research</h2>
+<p>My PhD research drew from principles in ecology, hydrology, and geography to identify the effects of forest disturbance from extreme events on carbon sequestration and streamflow in Puerto Rico.</p>
+<section id="streamflow-forest-cover-and-drought-in-puerto-rico" class="level3">
+<h3 class="anchored" data-anchor-id="streamflow-forest-cover-and-drought-in-puerto-rico">Streamflow, forest cover, and drought in Puerto Rico</h3>
 <p>In Puerto Rico, streamflow provides over 80% of water used for human consumption, and limited water storage infrastructure has caused multiple water rationing periods during drought. To understand the relationships between forest cover, drought, and streamflow, my coauthors and I used hydrological and statistical techniques (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hyp.14551">Hall et al, 2022</a>). We found that watersheds with high forest cover had consistently greater streamflow than deforested ones, even during periods of intense and prolonged drought. Our results demonstrated that forest cover, through increased water storage and infiltration, may lessen the impact of drought on streamflow in Puerto Rico.</p>
+<p><img src="Ch1_WatershedMap3.jpg" class="img-fluid" alt="Puerto Rico Watersheds"> <img src="CH1_Coef_wetdry_20watersheds_Sub2.jpg" class="img-fluid" alt="Effect of forest cover and drought characteristics on peak and low streamflow"></p>
+</section>
+<section id="quantifying-forest-damage-from-hurricane-maria" class="level3">
+<h3 class="anchored" data-anchor-id="quantifying-forest-damage-from-hurricane-maria">Quantifying forest damage from Hurricane Maria</h3>
 <p>Hurricane María hit Puerto Rico in 2017, causing widespread forest damage. To estimate forest damage extent (e.g., AGB loss), my coauthors and I combined field data and Sentinel-2 optical satellite imagery (<a href="https://www.nature.com/articles/s41598-020-61164-2">Hall et al.&nbsp;2020</a>) and determined that 23% of pre-hurricane forest AGB was lost. We evaluated risk factors associated with damage severity caused by Hurricane María using random forest decision trees and found that storm-related rainfall was a strong predictor of forest damage. Expected increases in hurricane-associated rainfall highlight the need to consider how such shifts, together with high-speed winds, will affect terrestrial ecosystems.</p>
-<p>Finally, we tested whether forest cover and estimates of forest damage explain changes to Puerto Rican streamflow regimes after Hurricane María. Using statistical models, we found that nearly all watersheds experienced higher post-storm streamflow. Forest damage increased streamflow after the storm, and forests, however damaged, increase resistance to storm impacts on streamflow. On average, major changes to streamflow regimes lasted months, but residual changes remained for over a year. Our results demonstrate how interactions between forest damage and cover influence streamflow regimes and increase understanding of forest damage effects on watershed function.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+</section>
+<section id="relating-forest-damage-to-post-hurricane-streamflow-response" class="level3">
+<h3 class="anchored" data-anchor-id="relating-forest-damage-to-post-hurricane-streamflow-response">Relating forest damage to post-hurricane streamflow response</h3>
+<p>Finally, we tested whether forest cover and estimates of forest damage explain changes to Puerto Rican streamflow regimes after Hurricane María (<strong><em>Hall et al.&nbsp;in revision</em></strong>). Using statistical models, we found that nearly all watersheds experienced higher post-storm streamflow. Forest damage increased streamflow after the storm, and forests, however damaged, increase resistance to storm impacts on streamflow. On average, major changes to streamflow regimes lasted months, but residual changes remained for over a year. Our results demonstrate how interactions between forest damage and cover influence streamflow regimes and increase understanding of forest damage effects on watershed function.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
