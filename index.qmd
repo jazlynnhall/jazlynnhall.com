@@ -17,7 +17,7 @@ I'm a forest, landscape, and disturbance ecologist and am currently a Postdoctor
 
 Most recently, I'm interested in forest response to and recovery from fire and the post-fire impacts on forest ecosystem services like carbon storage and water resources.
 
-# Education
+## Education
 
 **Ph.D. in Ecology and Evolutionary Biology (2022)** Columbia University, New York, NY
 
