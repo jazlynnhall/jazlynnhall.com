@@ -16,3 +16,7 @@ about:
 I'm a forest, landscape, and disturbance ecologist and am currently a Postdoctoral Associate in the Forest Futures Lab at the Cary Institute of Ecosystem Studies. In my work, I evaluate the spatial and temporal relationships between vegetation, climate, and disturbances such as fire, drought, cyclonic storms, and deforestation.
 
 Most recently, I'm interested in forest response to and recovery from fire and the post-fire impacts on forest ecosystem services like carbon storage and water resources.
+
+# Education
+
+Ph.D. Columbia University
