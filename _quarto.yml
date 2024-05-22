@@ -5,11 +5,10 @@ website:
   title: "Jazlynn Hall"
   navbar:
     left:
-      - href: about.qmd
-        text: About
-      - href: projects.qmd
-        text: Projects
-
+      - file: about.qmd
+        text: "About""
+      - file: projects.qmd
+        text: "Projects""
 format:
   html:
     theme: cosmo
