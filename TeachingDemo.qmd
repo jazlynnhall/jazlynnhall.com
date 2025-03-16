@@ -38,7 +38,7 @@ nbr = rast(lfiles2)
 
 
 
-tile<- st_read('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/Lesson/tile369.shp')%>%
+tile<- st_read('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/Lesson/tile369.shp', quiet=T)%>%
   st_transform(crs=crs(nbr))
 # Get bounding box coordinates
 bbox <- st_bbox(tile)
