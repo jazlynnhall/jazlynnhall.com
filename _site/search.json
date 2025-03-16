@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Currently, I am a Postdoctoral Associate at the Cary Institute of Ecosystem Studies working with Dr. Winslow D. Hansen.\n\n\n\nForest Water Nexus\n\n\nWorking within the forest-water nexus, my research examines the relationships and feedbacks between water and forests, particularly in the context of disturbance and carbon. My work combines field data, remote sensing, geospatial and statistical analysis, and machine learning. I ask how water affects forests by examining how hydroclimate and water-related disturbances (i.e. fire, drought and some cyclonic storms) influence forest characteristics such as carbon storage, regeneration dynamics, and community composition. I then evaluate how forests impact water by examining the subsequent impacts on water resources like streamflow and water quality.\nIn my spare time, you’ll find me hiking with my dog, reading, gardening, and knitting. Also probably mentioning that I am from Wyoming one too many times."
+    "text": "Currently, I am a Research Associate at the Cary Institute of Ecosystem Studies working with Dr. Winslow D. Hansen.\n\nMy research is driven by the following question: How are climatic changes, disturbances, and human activities shaping forest resilience? From tropical to boreal systems, I link field surveys, remote sensing, geospatial/statistical analysis, and machine learning to evaluate resilience and disturbance in forests and forested watersheds. My research objectives are to 1) monitor forest function, disturbance, and recovery, 2) determine drivers and indicators of variability in disturbance magnitude and recovery dynamics, and 3) project future risk and resilience outcomes.\nIn my spare time, you’ll find me hiking with my dog, reading, gardening, and knitting. Also probably mentioning that I am from Wyoming one too many times."
   },
   {
     "objectID": "about.html#phd-research",
@@ -54,5 +54,12 @@
     "title": "Jazlynn Hall",
     "section": "Education",
     "text": "Education\nPh.D. in Ecology and Evolutionary Biology (2022) Columbia University, New York, NY\nM.A. in Ecology and Evolutionary Biology (2018) Columbia University, New York, NY\nB.S. in Geography (2016) University of Wyoming, Laramie, WY\nB.A. in Anthropology (2016) University of Wyoming, Laramie, WY"
+  },
+  {
+    "objectID": "TeachingDemo.html",
+    "href": "TeachingDemo.html",
+    "title": "NBR activity",
+    "section": "",
+    "text": "Welcome to my teaching demonstration!\n\n\nReading layer `tile369' from data source \n  `C:\\Users\\hallj\\Documents\\JobApps\\Prof\\CUBoulder\\interview\\Lesson\\tile369.shp' \n  using driver `ESRI Shapefile'\nSimple feature collection with 1 feature and 1 field\nGeometry type: POLYGON\nDimension:     XY\nBounding box:  xmin: -854935.7 ymin: 1975400 xmax: -779935.7 ymax: 2050400\nProjected CRS: NAD83 / Conus Albers"
   }
 ]

@@ -4,7 +4,12 @@ title: "NBR activity"
 
 Welcome to my teaching demonstration!
 
-```{r, echo=FALSE, message=FALSE}
+```{r}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| 
+
 library(tidyverse, quiet=T)
 library(terra, quiet=T)
 library(ggplot2, quiet=T)
@@ -20,7 +25,12 @@ pal =  viridis(100)
 
 ```
 
-```{r, echo=FALSE, message=FALSE}
+```{r}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+
+
 lfiles2<- list.files('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/Lesson/GEE_Exports', 'tif', full.names = T)
 
 # read in NBR
