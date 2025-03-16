@@ -11,6 +11,8 @@ website:
         text: "Projects"
       - file: CV_JazlynnHall_240522.pdf
         text: "CV"
+      - file: TeachingDemo.qmd
+        test: 'Teaching Demonstration'
 format:
   html:
     theme: cosmo
