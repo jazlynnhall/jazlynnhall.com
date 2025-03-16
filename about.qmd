@@ -4,7 +4,7 @@ title: "About"
 
 Currently, I am a Research Associate at the [Cary Institute of Ecosystem Studies](https://www.caryinstitute.org/) working with [Dr. Winslow D. Hansen](https://forestfutureslab.org/).
 
-![Forest Water Nexus](ForestWaterNexus.jpg)
+![](images/Research_schematic-01.jpg)
 
 Working within the forest-water nexus, my research examines the relationships and feedbacks between water and forests, particularly in the context of disturbance and carbon. My work combines field data, remote sensing, geospatial and statistical analysis, and machine learning. I ask how water affects forests by examining how hydroclimate and water-related disturbances (i.e. fire, drought and some cyclonic storms) influence forest characteristics such as carbon storage, regeneration dynamics, and community composition. I then evaluate how forests impact water by examining the subsequent impacts on water resources like streamflow and water quality.
 
