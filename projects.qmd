@@ -1,4 +1,5 @@
-## Postdoctoral Research
+
+## Current Research
 
 ### Western Fire and Forest Resilience Collaborative
 
@@ -10,11 +11,14 @@ I am also a member of the "Consequences for Ecosystem services" working group, w
 
 ### Managing forest carbon in interior Alaska
 
-My collaborators and I have recently received funds from the [Joint Fire Science Program](https://www.firescience.gov/ords/prd/jf_jfsp/jf_jfsp/r/jfspublic/home) to assess the risk of forest carbon loss to fire in interior Alaska, predict forest recovery after fire for the next century, and project the impacts of potential management strategies. Our project, titled *Informing effective strategies for managing carbon stores with increasing fire in boreal forests of interior Alaska* will co-produce potential management scenarios to maximize forest carbon storage by communicating with natural resource managers and stakeholders. This project will begin in October, 2024.
+I am a co-PI on a recently started a project funded by the [Joint Fire Science Program](https://www.firescience.gov/ords/prd/jf_jfsp/jf_jfsp/r/jfspublic/home) to assess the risk of forest carbon loss to fire in interior Alaska, predict forest recovery after fire for the next century, and project the impacts of potential management strategies. Our project, titled *Informing effective strategies for managing carbon stores with increasing fire in boreal forests of interior Alaska* will co-produce potential management scenarios to maximize forest carbon storage by communicating with natural resource managers and stakeholders. 
+
+
+## Postdoctoral Research
 
 ### **Forest carbon storage in the Western United States: distribution, drivers, and trends**
 
-I just wrapped up a project funded by the Environmental Defense Fund focusing on analyzing the distribution, trends, and drivers of forest carbon in the Western US ([Hall et al. 2024 Earth's Future](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023EF004399)*). My collaborators and I used USDA Forest Inventory and Analysis (FIA) survey data (2005-2019) compare carbon between 19 forested ecoregions. Using GIS and statistical analysis, we analyzed patterns in the spatial distribution of forest carbon and identified social and biophysical carbon drivers, including tree harvest, fire occurrence and severity, insect and disease presence, topography, and climate indices. We evaluated driver importance as well as driver relationships with carbon using machine learning models and a model interpretation technique rooted in game theory. Finally, we assessed ecoregion-level recent carbon trends using linear models.
+My Postdoctoral Research was funded by the Environmental Defense Fund, focusing on analyzing the distribution, trends, and drivers of forest carbon in the Western US ([Hall et al. 2024 Earth's Future](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023EF004399)). My collaborators and I used USDA Forest Inventory and Analysis (FIA) survey data (2005-2019) compare carbon between 19 forested ecoregions. Using GIS and statistical analysis, we analyzed patterns in the spatial distribution of forest carbon and identified social and biophysical carbon drivers, including tree harvest, fire occurrence and severity, insect and disease presence, topography, and climate indices. We evaluated driver importance as well as driver relationships with carbon using machine learning models and a model interpretation technique rooted in game theory. Finally, we assessed ecoregion-level recent carbon trends using linear models.
 
 ![Relative driver importance for live and dead forest carbon pools](Hall2024_Figure2_map_grouped_importance_12km_livedead.jpg)
 
@@ -40,4 +44,4 @@ Hurricane María hit Puerto Rico in 2017, causing widespread forest damage. To e
 
 ### Relating forest damage to post-hurricane streamflow response
 
-Finally, we tested whether forest cover and estimates of forest damage explain changes to Puerto Rican streamflow regimes after Hurricane María (***Hall et al. 2024 Hydrological Processes***). Using statistical models, we found that nearly all watersheds experienced higher post-storm streamflow. Forest damage increased streamflow after the storm, and forests, however damaged, increase resistance to storm impacts on streamflow. On average, major changes to streamflow regimes lasted months, but residual changes remained for over a year. Our results demonstrate how interactions between forest damage and cover influence streamflow regimes and increase understanding of forest damage effects on watershed function.
+Finally, we tested whether forest cover and estimates of forest damage explain changes to Puerto Rican streamflow regimes after Hurricane María ([Hall et al. 2024 Hydrological Processes](https://onlinelibrary.wiley.com/doi/full/10.1002/hyp.15249)). Using statistical models, we found that nearly all watersheds experienced higher post-storm streamflow. Forest damage increased streamflow after the storm, and forests, however damaged, increase resistance to storm impacts on streamflow. On average, major changes to streamflow regimes lasted months, but residual changes remained for over a year. Our results demonstrate how interactions between forest damage and cover influence streamflow regimes and increase understanding of forest damage effects on watershed function.
