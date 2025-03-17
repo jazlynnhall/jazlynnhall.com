@@ -20,6 +20,9 @@ library(leaflet, quiet=T)
 library(leafsync, quiet=T)
 library(RColorBrewer, quiet=T)
 library(viridis, quiet=T)
+library(leafsync, quiet=T)
+library(leafem, quiet=T)
+
 
 pal =  viridis(100)
 
@@ -29,9 +32,10 @@ pal =  viridis(100)
 #| echo: FALSE
 #| message: FALSE
 #| warning: FALSE
+#| eval: FALSE
 
 
-lfiles2<- list.files('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/Lesson/GEE_Exports', 'tif', full.names = T)
+lfiles2<- list.files('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/Lesson/GEE_Exports', 'LCMSts_Landsat8_NBR_', full.names = T)
 
 # read in NBR
 nbr = rast(lfiles2)
@@ -40,27 +44,27 @@ nbr = rast(lfiles2)
 
 tile<- st_read('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/Lesson/tile369.shp', quiet=T)%>%
   st_transform(crs=crs(nbr))
-# Get bounding box coordinates
-bbox <- st_bbox(tile)
-xmin <- bbox["xmin"] %>% as.numeric()
-xmax <- bbox["xmax"] %>% as.numeric()
-ymin <- bbox["ymin"] %>% as.numeric()
-ymax <- bbox["ymax"] %>% as.numeric()
-
-# Compute midpoints
-xmid <- (xmin + xmax) / 2
-ymid <- (ymin + ymax) / 2
-
-# Define four quadrants as bounding boxes
-quadrants <- list(
-  "NW" = st_as_sfc(st_bbox(c(xmin = xmin, xmax = xmid, ymin = ymid, ymax = ymax), crs = st_crs(tile))),
-  "NE" = st_as_sfc(st_bbox(c(xmin = xmid, xmax = xmax, ymin = ymid, ymax = ymax), crs = st_crs(tile))),
-  "SW" = st_as_sfc(st_bbox(c(xmin = xmin, xmax = xmid, ymin = ymin, ymax = ymid), crs = st_crs(tile))),
-  "SE" = st_as_sfc(st_bbox(c(xmin = xmid, xmax = xmax, ymin = ymin, ymax = ymid), crs = st_crs(tile)))
-)
-
-# Choose the quadrant to keep (e.g., "NE")
-selected_quadrant <- quadrants[["SE"]]
+# # Get bounding box coordinates
+# bbox <- st_bbox(tile)
+# xmin <- bbox["xmin"] %>% as.numeric()
+# xmax <- bbox["xmax"] %>% as.numeric()
+# ymin <- bbox["ymin"] %>% as.numeric()
+# ymax <- bbox["ymax"] %>% as.numeric()
+# 
+# # Compute midpoints
+# xmid <- (xmin + xmax) / 2
+# ymid <- (ymin + ymax) / 2
+# 
+# # Define four quadrants as bounding boxes
+# quadrants <- list(
+#   "NW" = st_as_sfc(st_bbox(c(xmin = xmin, xmax = xmid, ymin = ymid, ymax = ymax), crs = st_crs(tile))),
+#   "NE" = st_as_sfc(st_bbox(c(xmin = xmid, xmax = xmax, ymin = ymid, ymax = ymax), crs = st_crs(tile))),
+#   "SW" = st_as_sfc(st_bbox(c(xmin = xmin, xmax = xmid, ymin = ymin, ymax = ymid), crs = st_crs(tile))),
+#   "SE" = st_as_sfc(st_bbox(c(xmin = xmid, xmax = xmax, ymin = ymin, ymax = ymid), crs = st_crs(tile)))
+# )
+# 
+# # Choose the quadrant to keep (e.g., "NE")
+# selected_quadrant <- quadrants[["SE"]]
 
 # # Crop the shapefile to the selected quadrant
 # smallertile <- st_intersection(tile, selected_quadrant)
@@ -74,10 +78,106 @@ nbr_cropped2<- aggregate(nbr, 6)
 
 
 
-leaflet() %>%
-  addProviderTiles(providers$Esri.WorldImagery) %>%
-  setView(lng = -105.7788 , lat = 40.7484 , zoom = 8) %>%
-   addRasterImage(nbr_cropped2[[35]], colors = pal, opacity = 0.8) #%>%
+# leaflet() %>%
+#   addProviderTiles(providers$Esri.WorldImagery) %>%
+#   setView(lng = -105.7788 , lat = 40.7484 , zoom = 8) %>%
+#    addRasterImage(nbr_cropped2[[35]], colors = pal, opacity = 0.8) #%>%
   #addLegend(pal = pal, values = values(nbr_cropped2[[35]]),
   #  title = "Surface temp")
+```
+
+```{r}
+
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+
+
+lfiles2<- list.files('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/Lesson/GEE_Exports', 'LCMSts_Landsat8_NBR_', full.names = T)
+
+# read in NBR
+nbr = rast(lfiles2)
+
+# read in tile 
+
+tile<- st_read('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/Lesson/tile369.shp', quiet=T)%>%
+  st_transform(crs=crs(nbr))
+
+
+# resample to a lower resolution (makes it easier to render)
+nbr_ag<- aggregate(nbr, 6)
+
+# mapviewOptions(basemaps = c("Esri.WorldImagery"),
+#                raster.palette = pal,
+#                #vector.palette = colorRampPalette(c("snow", "cornflowerblue", "grey10")),
+#                na.color = "transparent",
+#                #layers.control.pos = "topleft"
+#                fgb=TRUE
+#                )
+# mapviewOptions(default=TRUE)
+
+# rename for a prettier plot 
+NBR_2019 = nbr_ag[[35]]
+NBR_2021 = nbr_ag[[37]]
+
+names(NBR_2019)<- 'NBR2019'
+names(NBR_2021)<- 'NBR2021'
+
+dNBR = NBR_2021 - NBR_2019
+names(dNBR) = 'dNBR'
+```
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+
+# plot 2019 NBR
+mapview(NBR_2019,  at = seq(-1,1,0.1))+ 
+  mapview(NBR_2021,  at = seq(-1,1,0.1), legend=F)+
+  mapview(dNBR)
+```
+
+```{r}
+#| echo: FALSE
+#| eval: FALSE
+#| message: FALSE
+#| warning: FALSE
+
+# plot 2021 NBR
+mapview(NBR_2021, zcol = "NBR2021", at = seq(-1,1,0.1))
+
+```
+
+```{r}
+#| echo: FALSE
+#| eval: FALSE
+#| message: FALSE
+#| warning: FALSE
+
+# mapview graveyard
+
+mapview(NBR_2019, zcol = "NBR2019", at = seq(-1,1,0.1))+
+  mapview(NBR_2021, map.types = 'Esri.WorldImagery',zcol = "NBR2021", at = seq(-1,1,0.1), legend=F)
+
+# mapview(NBR_2019, map.types = 'Esri.WorldImagery')
+m1 = mapview(NBR_2019, map.types = 'Esri.WorldImagery',zcol = "NBR", at = seq(-1,1,0.1))
+m2 = mapview(NBR_2021, map.types = 'Esri.WorldImagery',zcol = "NBR", at = seq(-1,1,0.1), legend=F)
+
+
+m <- leafsync::sync(m1, m2, sync.cursor = T)
+m
+
+
+# Create leaflet map
+leaflet() %>%
+  addTiles() %>%
+  addRasterImage(NBR_2019, colors = pal, opacity = 0.8, group = "Raster 1") %>%
+  addRasterImage(NBR_2021, colors = pal, opacity = 0.8, group = "Raster 2") %>%
+  addLayersControl(
+    overlayGroups = c("Raster 1", "Raster 2"),
+    options = layersControlOptions(collapsed = FALSE)
+  ) %>%
+  addImageQuery(NBR_2019, layerId = "NBR2019", group = "Raster 1", type = 'click', position = 'bottomleft') %>%
+  addImageQuery(NBR_2021, layerId = "NBR2021", group = "Raster 2", type = 'mousemove')
 ```
