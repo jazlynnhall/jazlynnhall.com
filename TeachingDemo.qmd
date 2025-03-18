@@ -123,7 +123,7 @@ NBR_2021 = nbr_ag[[37]]
 names(NBR_2019)<- 'NBR2019'
 names(NBR_2021)<- 'NBR2021'
 
-dNBR = NBR_2021 - NBR_2019
+dNBR = NBR_2019 - NBR_2021
 names(dNBR) = 'dNBR'
 ```
 
@@ -160,7 +160,7 @@ mapview(NBR_2021,  at = seq(-.5,1,0.1), col.regions = rev(pal))
 #| warning: FALSE
 #| 
 # plot dNBR
-mapview(dNBR)
+mapview(dNBR, col.regions = rev(magma(100)))
 ```
 
 # All figures in one
@@ -169,9 +169,13 @@ mapview(dNBR)
 #| echo: FALSE
 #| message: FALSE
 #| warning: FALSE
-#| 
+
+NBR_2019<- NBR_2019
+names(NBR_2019)<- 'NBR2019'
+NBR_2021<- NBR_2021
+names(NBR_2021)<- 'NBR2021'
 # all in one 
-mapview(NBR_2019,  at = seq(-.5,1,0.1), col.regions = rev(pal))+ 
+mapview(NBR_2019,  at = seq(-.5,1,0.1), col.regions = rev(pal), legend=F)+ 
   mapview(NBR_2021,  at = seq(-.5,1,0.1), col.regions = rev(pal), legend=F)+
   mapview(dNBR)
 ```
