@@ -148,7 +148,7 @@ mapview(NBR_2019,  at = seq(-.5,1,0.1), col.regions = rev(pal))
 #| warning: FALSE
 #| 
 # plot 2021 NBR
-mapview(NBR_2021,  at = seq(-.5,1,0.1), col.regions = rev(pal), legend=F)
+mapview(NBR_2021,  at = seq(-.5,1,0.1), col.regions = rev(pal))
 
 ```
 
