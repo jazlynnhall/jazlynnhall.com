@@ -4,6 +4,40 @@ title: "NBR activity"
 
 Welcome to my teaching demonstration!
 
+**Some quick NBR facts:**
+
+-   NBR = (NIR-SWIR) / (NIR+SWIR)
+
+-   NBR ranges from -1 to 1
+
+-   High NBR = healthy vegetation (closer to 1)
+
+-   Low NBR = burned or disturbed vegetation (closer to 0 or slightly below)
+
+**dNBR facts:**
+
+-   We can quantify disturbance by measuring the change in NBR values (dNBR)
+
+-   dNBR = prefire NBR - postfire NBR
+
+-   dNBR \> 0: disturbance signal
+
+-   dNBR \< 0: increased healthy vegetation
+
+-   dNBR = 0: no change
+
+See [lecture slides](jazlynnhall.com/lectureslides.pdf) if you need to refer back to the course material
+
+# Questions to consider when exploring this dataset:
+
+-   Where do you think the fire was?
+
+-   Can you identify areas with high, moderate, and low burn severity?
+
+-   What type of fire (surface, crown, ground) may have occurred in each area?
+
+-   Is there anything else you noticed on the landscape?
+
 ```{r}
 #| echo: FALSE
 #| message: FALSE
@@ -127,7 +161,7 @@ dNBR = NBR_2019 - NBR_2021
 names(dNBR) = 'dNBR'
 ```
 
-# NBR 2019 
+# NBR 2019
 
 ```{r}
 #| echo: FALSE
@@ -179,6 +213,10 @@ mapview(NBR_2019,  at = seq(-.5,1,0.1), col.regions = rev(pal), legend=F)+
   mapview(NBR_2021,  at = seq(-.5,1,0.1), col.regions = rev(pal), legend=F)+
   mapview(dNBR)
 ```
+
+# Viewing all files simulataneously
+
+Unfortunately, the map value no longer appears when you hover over it in this layer.
 
 ```{r}
 #| echo: FALSE

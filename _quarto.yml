@@ -9,10 +9,12 @@ website:
         text: "About"
       - file: projects.qmd
         text: "Projects"
-      - file: CV_JazlynnHall_240522.pdf
+      - file: CV_JazlynnHall_241212.pdf
         text: "CV"
       - file: TeachingDemo.qmd
         text: 'Teaching Demonstration'
+      - file: lectureslides.pdf
+        text: 'Lecture Slides'
 format:
   html:
     theme: cosmo
