@@ -185,30 +185,10 @@ mapview(NBR_2019,  at = seq(-.5,1,0.1), col.regions = rev(pal))+
 # m2 = mapview(NBR_2021, map.types = 'Esri.WorldImagery', at = seq(-5,1,0.1), legend=F)
 m1<- mapview(NBR_2019,  at = seq(-.5,1,0.1), col.regions = rev(pal))
 m2<- mapview(NBR_2021,  at = seq(-.5,1,0.1), col.regions = rev(pal))
+m3<- mapview(dNBR)
 
-
-m <- leafsync::sync(m1, m2, sync.cursor = T)
+m <- leafsync::sync(m1, m2, m3, sync.cursor = T)
 m
-```
-
-```{r}
-library(shiny)
-ui <- fluidPage(
-  mapviewOutput("map"),
-  mapviewOutput("map1")
-)
-
-
-server <- function(input, output, session) {
-  output$map <- renderLeaflet({
-    mapview(NBR_2019)@map
-  })
-  output$map1 <- renderLeaflet({
-    mapview(NBR_2021)@map
-  })
-}
-
-shinyApp(ui, server)
 ```
 
 ```{r}
