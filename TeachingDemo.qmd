@@ -87,7 +87,6 @@ nbr_cropped2<- aggregate(nbr, 6)
 ```
 
 ```{r}
-
 #| echo: FALSE
 #| message: FALSE
 #| warning: FALSE
@@ -114,7 +113,8 @@ nbr_ag<- aggregate(nbr, 6)
 #                #layers.control.pos = "topleft"
 #                fgb=TRUE
 #                )
-# mapviewOptions(default=TRUE)
+mapviewOptions(default=TRUE)
+# mapviewOptions(legend.pos = 'bottomleft')
 
 # rename for a prettier plot 
 NBR_2019 = nbr_ag[[35]]
@@ -127,15 +127,88 @@ dNBR = NBR_2021 - NBR_2019
 names(dNBR) = 'dNBR'
 ```
 
+# NBR 2019 
+
 ```{r}
 #| echo: FALSE
 #| message: FALSE
 #| warning: FALSE
 
 # plot 2019 NBR
-mapview(NBR_2019,  at = seq(-1,1,0.1))+ 
-  mapview(NBR_2021,  at = seq(-1,1,0.1), legend=F)+
+mapview(NBR_2019,  at = seq(-.5,1,0.1), col.regions = rev(pal))
+
+
+```
+
+# NBR 2021
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| 
+# plot 2021 NBR
+mapview(NBR_2021,  at = seq(-.5,1,0.1), col.regions = rev(pal), legend=F)
+
+```
+
+# Difference in NBR (2019-2021)
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| 
+# plot dNBR
+mapview(dNBR)
+```
+
+# All figures in one
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| 
+# all in one 
+mapview(NBR_2019,  at = seq(-.5,1,0.1), col.regions = rev(pal))+ 
+  mapview(NBR_2021,  at = seq(-.5,1,0.1), col.regions = rev(pal), legend=F)+
   mapview(dNBR)
+```
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| 
+# m1 = mapview(NBR_2019, map.types = 'Esri.WorldImagery', at = seq(-5,1,0.1))
+# m2 = mapview(NBR_2021, map.types = 'Esri.WorldImagery', at = seq(-5,1,0.1), legend=F)
+m1<- mapview(NBR_2019,  at = seq(-.5,1,0.1), col.regions = rev(pal))
+m2<- mapview(NBR_2021,  at = seq(-.5,1,0.1), col.regions = rev(pal))
+
+
+m <- leafsync::sync(m1, m2, sync.cursor = T)
+m
+```
+
+```{r}
+library(shiny)
+ui <- fluidPage(
+  mapviewOutput("map"),
+  mapviewOutput("map1")
+)
+
+
+server <- function(input, output, session) {
+  output$map <- renderLeaflet({
+    mapview(NBR_2019)@map
+  })
+  output$map1 <- renderLeaflet({
+    mapview(NBR_2021)@map
+  })
+}
+
+shinyApp(ui, server)
 ```
 
 ```{r}
