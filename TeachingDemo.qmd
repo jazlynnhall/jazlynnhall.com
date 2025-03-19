@@ -26,7 +26,7 @@ Welcome to my teaching demonstration!
 
 -   dNBR = 0: no change
 
-See [lecture slides](jazlynnhall.com/lectureslides_compressed.pdf) if you need to refer back to the course material
+See [lecture slides](lectureslides_compressed.pdf) if you need to refer back to the course material
 
 # Questions to consider when exploring this dataset:
 
