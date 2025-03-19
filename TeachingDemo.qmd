@@ -4,7 +4,7 @@ title: "NBR activity"
 
 Welcome to my teaching demonstration!
 
-**Some quick NBR facts:**
+**Here are some quick NBR facts:**
 
 -   NBR = (NIR-SWIR) / (NIR+SWIR)
 
@@ -74,6 +74,8 @@ lfiles2<- list.files('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/
 # read in NBR
 nbr = rast(lfiles2)
 
+# try making a change 
+nbr2=nbr
 
 
 tile<- st_read('C:/Users/hallj/Documents/JobApps/Prof/CUBoulder/interview/Lesson/tile369.shp', quiet=T)%>%
