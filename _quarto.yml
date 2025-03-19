@@ -13,7 +13,7 @@ website:
         text: "CV"
       - file: TeachingDemo.qmd
         text: 'Teaching Demonstration'
-      - file: lectureslides.pdf
+      - file: lectureslides_compressed.pdf
         text: 'Lecture Slides'
         
 format:
