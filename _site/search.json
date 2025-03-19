@@ -60,7 +60,7 @@
     "href": "TeachingDemo.html",
     "title": "NBR activity",
     "section": "",
-    "text": "Welcome to my teaching demonstration!\n\nNBR 2019\n\n\n\n\n\n\n\n\nNBR 2021\n\n\n\n\n\n\n\n\nDifference in NBR (2019-2021)\n\n\n\n\n\n\n\n\nAll figures in one"
+    "text": "Welcome to my teaching demonstration!\nHere are some quick NBR facts:\n\nNBR = (NIR-SWIR) / (NIR+SWIR)\nNBR ranges from -1 to 1\nHigh NBR = healthy vegetation (closer to 1)\nLow NBR = burned or disturbed vegetation (closer to 0 or slightly below)\n\ndNBR facts:\n\nWe can quantify disturbance by measuring the change in NBR values (dNBR)\ndNBR = prefire NBR - postfire NBR\ndNBR &gt; 0: disturbance signal\ndNBR &lt; 0: increased healthy vegetation\ndNBR = 0: no change\n\nSee lecture slides if you need to refer back to the course material\n\nQuestions to consider when exploring this dataset:\n\nWhere do you think the fire was?\nCan you identify areas with high, moderate, and low burn severity?\nWhat type of fire (surface, crown, ground) may have occurred in each area?\nIs there anything else you noticed on the landscape?\n\n\n\nNBR 2019\n\n\n\n\n\n\n\n\nNBR 2021\n\n\n\n\n\n\n\n\nDifference in NBR (2019-2021)\n\n\n\n\n\n\n\n\nAll figures in one\n\n\n\n\n\n\n\n\nViewing all files simulataneously\nUnfortunately, the map value no longer appears when you hover over it in this layer."
   },
   {
     "objectID": "projects.html#current-research",
