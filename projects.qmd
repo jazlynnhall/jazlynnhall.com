@@ -1,18 +1,22 @@
-
 ## Current Research
 
 ### Western Fire and Forest Resilience Collaborative
 
-I am a research associate working as a part of the [Western US Fire and Forest Resilience Collaborative (WFFRC)](https://www.caryinstitute.org/science/research-projects/western-fire-forest-resilience-collaborative), a project funded by the Gordon and Betty Moore Foundation. This project is focused on co-creating a research program among an interdisciplinary set of researchers, managers and policy makers that ensures the predictive science of fire ecology and forest resilience is sufficiently mature to support effective strategies for addressing the Western US fire crisis.
+I am a co-PI within the [Western US Fire and Forest Resilience Collaborative (WFFRC)](https://www.caryinstitute.org/science/research-projects/western-fire-forest-resilience-collaborative), a project funded by the Gordon and Betty Moore Foundation. This project is focused on co-creating a research program among an interdisciplinary set of researchers, managers and policy makers that ensures the predictive science of fire ecology and forest resilience is sufficiently mature to support effective strategies for addressing the Western US fire crisis.
 
 I am a team lead within the "Tracking Forests and Fire" working group, tasked with quantifying how fire regimes and resulting forest structure and function are changing across the western US. My responsibilities for this working group are to 1) develop and execute research methods that use remote sensing to track forest characteristics such as carbon and vegetation community composition, 2) determine how these characteristics have changed in response to fire and management, and 3) predict forest successional trajectories from recent fires. Results from this work will be used to calibrate simulation models of forests and fire.
 
 I am also a member of the "Consequences for Ecosystem services" working group, which aims to quantify current and future consequences of fire for people, biodiversity, and ecosystem services essential to human well-being and economies. My role within this group is to 1) determine how fire has impacted forest carbon storage and water resources (i.e. streamflow, groundwater depths, lake volumes, and water quality) through the recent historical record, and 2) predict changes to water resources using forest and fire simulation model outputs. Together with my collaborators, I will compile water resource data and remote sensing indices for burned watersheds across the western US. We will use this dataset to evaluate how water resources have changed as a result of fires and to build a predictive statistical and machine learning model that uses projections of forests and fire characteristics to project future changes to water resources given climate, fire, and management scenarios.
 
+[***Readiness for Ecologically Beneficial Wildfire***]{.underline}
+
+Many forests in the Western US are not ready for ecologically beneficial wildfire. A legacy of fire suppression and exclusion has caused abnormal fuel buildups, making fires more intense than local tree species can tolerate. This is particularly true in semi-arid forests adapted to frequent, low-to-moderate severity fires, while wetter forests adapted to infrequent, high-severity burning may be less affected. However, rising temperatures and increasingly variable precipitation will continue to shape wildfire readiness across the region.
+
+I am leading a WFFRC-related effort to quantify and map the forested areas that are ready to burn in an ecologically beneficial way. Our definition of Readiness is: If an area were to burn, the fire is likely to burn consistent with the historical range of variability (i.e., the forest would likely return to its pre-fire state).
+
 ### Managing forest carbon in interior Alaska
 
-I am a co-PI on a recently started a project funded by the [Joint Fire Science Program](https://www.firescience.gov/ords/prd/jf_jfsp/jf_jfsp/r/jfspublic/home) to assess the risk of forest carbon loss to fire in interior Alaska, predict forest recovery after fire for the next century, and project the impacts of potential management strategies. Our project, titled *Informing effective strategies for managing carbon stores with increasing fire in boreal forests of interior Alaska* will co-produce potential management scenarios to maximize forest carbon storage by communicating with natural resource managers and stakeholders. 
-
+I am a co-PI on a recently started a project funded by the [Joint Fire Science Program](https://www.firescience.gov/ords/prd/jf_jfsp/jf_jfsp/r/jfspublic/home) to assess the risk of forest carbon loss to fire in interior Alaska, predict forest recovery after fire for the next century, and project the impacts of potential management strategies. Our project, titled *Informing effective strategies for managing carbon stores with increasing fire in boreal forests of interior Alaska* will co-produce potential management scenarios to maximize forest carbon storage by communicating with natural resource managers and stakeholders.
 
 ## Postdoctoral Research
 

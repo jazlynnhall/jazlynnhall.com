@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-Currently, I am a Research Associate at the [Cary Institute of Ecosystem Studies](https://www.caryinstitute.org/) working with [Dr. Winslow D. Hansen](https://forestfutureslab.org/). In August 2026 I will be starting at the University of Colorado Boulder as a [CIRES](https://cires.colorado.edu/) Fellow and Assistant Professor in the [EBIO Department](https://www.colorado.edu/ebio/).
+Currently, I am a Research Associate at the [Cary Institute of Ecosystem Studies](https://www.caryinstitute.org/) working with [Dr. Winslow D. Hansen](https://forestfutureslab.org/). **In August 2026 I will be starting at the University of Colorado Boulder as a [CIRES](https://cires.colorado.edu/) Fellow and Assistant Professor in the [EBIO Department](https://www.colorado.edu/ebio/)**.
 
 ![](Research_schematic.jpg)
 
