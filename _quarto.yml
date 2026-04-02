@@ -9,7 +9,7 @@ website:
         text: "About"
       - file: projects.qmd
         text: "Projects"
-      - file: CV_JazlynnHall_241212.pdf
+      - file: CV_JazlynnHall_251105.pdf
         text: "CV"
         
 format:
