@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jazlynn Hall</title>
+<title>projects – Jazlynn Hall</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -97,16 +97,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./CV_JazlynnHall_240522.pdf"> 
+    <a class="nav-link" href="./CV_JazlynnHall_251105.pdf"> 
 <span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./TeachingDemo.html"> 
-<span class="menu-text">Teaching Demonstration</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -148,9 +144,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="current-research">Current Research</h2>
 <section id="western-fire-and-forest-resilience-collaborative" class="level3">
 <h3 class="anchored" data-anchor-id="western-fire-and-forest-resilience-collaborative">Western Fire and Forest Resilience Collaborative</h3>
-<p>I am a research associate working as a part of the <a href="https://www.caryinstitute.org/science/research-projects/western-fire-forest-resilience-collaborative">Western US Fire and Forest Resilience Collaborative (WFFRC)</a>, a project funded by the Gordon and Betty Moore Foundation. This project is focused on co-creating a research program among an interdisciplinary set of researchers, managers and policy makers that ensures the predictive science of fire ecology and forest resilience is sufficiently mature to support effective strategies for addressing the Western US fire crisis.</p>
+<p>I am a co-PI within the <a href="https://www.caryinstitute.org/science/research-projects/western-fire-forest-resilience-collaborative">Western US Fire and Forest Resilience Collaborative (WFFRC)</a>, a project funded by the Gordon and Betty Moore Foundation. This project is focused on co-creating a research program among an interdisciplinary set of researchers, managers and policy makers that ensures the predictive science of fire ecology and forest resilience is sufficiently mature to support effective strategies for addressing the Western US fire crisis.</p>
 <p>I am a team lead within the “Tracking Forests and Fire” working group, tasked with quantifying how fire regimes and resulting forest structure and function are changing across the western US. My responsibilities for this working group are to 1) develop and execute research methods that use remote sensing to track forest characteristics such as carbon and vegetation community composition, 2) determine how these characteristics have changed in response to fire and management, and 3) predict forest successional trajectories from recent fires. Results from this work will be used to calibrate simulation models of forests and fire.</p>
 <p>I am also a member of the “Consequences for Ecosystem services” working group, which aims to quantify current and future consequences of fire for people, biodiversity, and ecosystem services essential to human well-being and economies. My role within this group is to 1) determine how fire has impacted forest carbon storage and water resources (i.e.&nbsp;streamflow, groundwater depths, lake volumes, and water quality) through the recent historical record, and 2) predict changes to water resources using forest and fire simulation model outputs. Together with my collaborators, I will compile water resource data and remote sensing indices for burned watersheds across the western US. We will use this dataset to evaluate how water resources have changed as a result of fires and to build a predictive statistical and machine learning model that uses projections of forests and fire characteristics to project future changes to water resources given climate, fire, and management scenarios.</p>
+<p><u><strong><em>Readiness for Ecologically Beneficial Wildfire</em></strong></u></p>
+<p>Many forests in the Western US are not ready for ecologically beneficial wildfire. A legacy of fire suppression and exclusion has caused abnormal fuel buildups, making fires more intense than local tree species can tolerate. This is particularly true in semi-arid forests adapted to frequent, low-to-moderate severity fires, while wetter forests adapted to infrequent, high-severity burning may be less affected. However, rising temperatures and increasingly variable precipitation will continue to shape wildfire readiness across the region.</p>
+<p>I am leading a WFFRC-related effort to quantify and map the forested areas that are ready to burn in an ecologically beneficial way. Our definition of Readiness is: If an area were to burn, the fire is likely to burn consistent with the historical range of variability (i.e., the forest would likely return to its pre-fire state).</p>
 </section>
 <section id="managing-forest-carbon-in-interior-alaska" class="level3">
 <h3 class="anchored" data-anchor-id="managing-forest-carbon-in-interior-alaska">Managing forest carbon in interior Alaska</h3>
@@ -249,18 +248,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -292,7 +280,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -300,7 +310,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
